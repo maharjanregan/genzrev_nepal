@@ -13,19 +13,19 @@ A multi-lens, evidence-based research site on how technology **shaped, enabled, 
 
 ## Read the report
 
-- [Executive brief](/executive-brief/)
-- [Timeline](/timeline/)
-- [Stakeholder map](/stakeholders/)
-- [Claims table](/claims/)
-- [Annotated bibliography](/bibliography/)
+- [Executive brief](executive-brief/)
+- [Timeline](timeline/)
+- [Stakeholder map](stakeholders/)
+- [Claims table](claims/)
+- [Annotated bibliography](bibliography/)
 
 ## Lenses
 
-- [Platforms & mobilization](/lenses/platforms/)
-- [State technology & control](/lenses/state-tech/)
-- [Narratives & information ecosystem](/lenses/narratives/)
-- [Human rights & digital rights](/lenses/rights/)
-- [Economic & infrastructural impact](/lenses/impact/)
+- [Platforms & mobilization](lenses/platforms/)
+- [State technology & control](lenses/state-tech/)
+- [Narratives & information ecosystem](lenses/narratives/)
+- [Human rights & digital rights](lenses/rights/)
+- [Economic & infrastructural impact](lenses/impact/)
 
 ## Method note
 
