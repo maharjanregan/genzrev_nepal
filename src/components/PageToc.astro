@@ -12,10 +12,13 @@ function slugify(s: string) {
 		.replace(/-+/g, '-');
 }
 
-const headings = Array.from(html.matchAll(/<h([23])[^>]*>(.*?)<\/h\1>/g)).map((m) => {
+const headings = Array.from(html.matchAll(/<h([23])([^>]*)>(.*?)<\/h\1>/g)).map((m) => {
 	const level = Number(m[1]);
-	const text = m[2].replace(/<[^>]+>/g, '').trim();
-	return { level, text, id: slugify(text) };
+	const attrs = m[2] ?? '';
+	const text = (m[3] ?? '').replace(/<[^>]+>/g, '').trim();
+	const idMatch = attrs.match(/id=\"([^\"]+)\"/);
+	const id = idMatch?.[1] ?? slugify(text);
+	return { level, text, id };
 });
 ---
 
