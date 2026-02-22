@@ -1,0 +1,93 @@
+---
+// Minimal, static timeline visualization.
+// Data is intentionally concise; the narrative and citations live on /timeline.
+const events = [
+	{ date: 'Nov 2023', title: 'TikTok ban', label: 'Platform restriction' },
+	{ date: 'Nov 2023', title: 'OONI measures DNS interference', label: 'Measurement' },
+	{ date: 'Aug 2024', title: 'Reports of lifting decision under conditions', label: 'Policy update' },
+	{ date: 'Feb 2025', title: 'Social media bill proposals + critiques', label: 'Regulation' },
+	{ date: 'Sep 2025', title: 'Broad platform restrictions reported; youth-led protests', label: 'Crisis / response' },
+	{ date: 'Sep 2025', title: 'Disruption signals in measurement dashboards (attribution caveats)', label: 'Measurement' },
+];
+
+const colors: Record<string, string> = {
+	'Platform restriction': '#ef4444',
+	Measurement: '#3b82f6',
+	'Regulation': '#a855f7',
+	'Policy update': '#10b981',
+	'Crisis / response': '#f59e0b',
+};
+---
+
+<section class="wrap">
+	<div class="title">
+		<h2>Timeline (visual)</h2>
+		<p class="muted">A quick visual map of tech inflection points. For sources and details, see the full <a href="timeline/">Timeline</a> page.</p>
+	</div>
+
+	<div class="legend">
+		{Object.entries(colors).map(([k, v]) => (
+			<div class="legend__item"><span class="dot" style={`background:${v}`}></span>{k}</div>
+		))}
+	</div>
+
+	<ol class="timeline">
+		{events.map((e) => (
+			<li class="event">
+				<div class="rail">
+					<span class="pin" style={`background:${colors[e.label] ?? '#64748b'}`}></span>
+				</div>
+				<div class="card">
+					<div class="date">{e.date}</div>
+					<div class="event__title">{e.title}</div>
+					<div class="tag" style={`border-color:${colors[e.label] ?? '#64748b'}`}>{e.label}</div>
+				</div>
+			</li>
+		))}
+	</ol>
+</section>
+
+<style>
+	.wrap { margin: 1.25rem 0 0; }
+	.title h2 { margin: 0; }
+	.muted { color: rgba(var(--black), 70%); }
+	.legend {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem 1rem;
+		margin: 0.8rem 0 1.1rem;
+	}
+	.legend__item { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.95rem; color: rgba(var(--black), 70%);} 
+	.dot { width: 10px; height: 10px; border-radius: 999px; }
+
+	.timeline {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: grid;
+		gap: 0.9rem;
+	}
+	.event { display: grid; grid-template-columns: 28px 1fr; gap: 0.8rem; align-items: stretch; }
+	.rail { position: relative; }
+	.rail::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: rgba(var(--black), 10%); transform: translateX(-50%);} 
+	.pin { position: sticky; top: 88px; display: block; width: 12px; height: 12px; border-radius: 999px; margin: 0.2rem auto 0; box-shadow: 0 0 0 4px rgba(0,0,0,0.03);} 
+
+	.card {
+		border: 1px solid rgba(var(--black), 10%);
+		border-radius: 14px;
+		padding: 0.9rem 1rem;
+		background: rgba(255,255,255,0.72);
+	}
+	.date { font-size: 0.9rem; color: rgba(var(--black), 60%); }
+	.event__title { font-weight: 700; margin-top: 0.15rem; }
+	.tag {
+		margin-top: 0.55rem;
+		display: inline-flex;
+		align-items: center;
+		padding: 0.22rem 0.55rem;
+		border-radius: 999px;
+		border: 1px solid rgba(var(--black), 15%);
+		font-size: 0.85rem;
+		color: rgba(var(--black), 70%);
+	}
+</style>

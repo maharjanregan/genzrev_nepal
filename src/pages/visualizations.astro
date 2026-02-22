@@ -1,0 +1,27 @@
+---
+import DocsLayout from '../layouts/DocsLayout.astro';
+import TimelineViz from '../components/TimelineViz.astro';
+
+const title = 'Visualizations';
+const description = 'Lightweight visual summaries: timeline, lenses, and post-revolution status.';
+---
+
+<DocsLayout title={title} description={description}>
+	<h1>Visualizations</h1>
+	<p class="muted">
+		These visuals are designed for clarity and speed. Each item should map back to the underlying sources in the
+		<a href="/claims">Claims table</a> and <a href="/bibliography">Annotated bibliography</a>.
+	</p>
+
+	<TimelineViz />
+
+	<section class="grid">
+		<a class="card grid__item" href="/timeline"><strong>Full timeline</strong><br /><span class="muted">dates + sources</span></a>
+		<a class="card grid__item" href="/claims"><strong>Claims table</strong><br /><span class="muted">evidence + confidence</span></a>
+		<a class="card grid__item" href="/post-revolution"><strong>Post-revolution</strong><br /><span class="muted">current state</span></a>
+	</section>
+
+	<style>
+		.muted { color: rgba(var(--black), 70%); }
+	</style>
+</DocsLayout>
