@@ -38,15 +38,34 @@ BBC reports a small group called themselves “Gen Z Rebels,” but this appears
 |---|---|---|---|
 | Gen Z Rebels | TikTok; VPN use; also notes other groups shared clips via Discord | Produced and posted anti-corruption/nepo-kid clips; amplification via influencers; other groups used Discord to share clips | BBC: https://www.bbc.com/news/articles/cn4ljv39em7o |
 
+## Publicly visible channel structure (from the server UI)
+
+The reporting generally does **not** publish individual channel names. However, the server UI itself exposes some channel names.
+The list below reflects what is **publicly visible to the viewer** (and may change over time).
+
+### Channels observed (non-exhaustive snapshot)
+
+- **announcements** (announcement channel)
+- **fact-checks** (announcement channel)
+- **representative-discussion** (text channel)
+- **💬-discussion-hub** (text channel)
+- **queries** (text channel)
+- **📰-news-dump** (text channel)
+- **Stage-2** (stage channel)
+- **Group Chat 2 ( PTT )** (voice channel)
+- **Group Chat 9 ( PTT )** (voice channel)
+
+> Note: channel names alone do not prove what *actually* happened inside them; this list is provided for navigation/context.
+
 ## What we still need (to expand this page)
 
-To add additional servers **with confidence**, we need at least one of:
+To add additional Discord **servers** (not just channels) with confidence, we need at least one of:
 - a reputable news article that **names the server**
 - a public post that includes the server name plus corroboration
 - an archived invite link (public) referenced by credible reporting
 
-If you have a list of suspected server names or screenshots of public posts that mention them, share them and we’ll validate and cite.
+If you have a list of suspected server names or links to posts that mention them, share them and we’ll validate and cite.
 
 ## Next upgrade (optional)
 
-- Add a “Claims” row for each Discord-related claim (server existence, size, role, reported discussion themes) with confidence ratings.
+- Add a row to the **Claims table** for each Discord-related claim (server existence, size, role, reported discussion themes) with confidence ratings.
