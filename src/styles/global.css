@@ -67,10 +67,38 @@ a:hover {
 
 /* subtle card utility for landing pages */
 .card {
+	display: block;
 	border: 1px solid rgba(var(--black), 10%);
 	border-radius: 14px;
 	background: rgba(255, 255, 255, 0.7);
 	box-shadow: 0 1px 0 rgba(var(--black), 4%);
+	padding: 0.95rem 1rem;
+	color: inherit;
+	text-decoration: none;
+}
+.card:hover {
+	border-color: rgba(var(--black), 18%);
+	box-shadow: 0 6px 24px rgba(var(--black), 8%);
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.9rem;
+	margin: 1rem 0 1.5rem;
+}
+.grid__item {
+	padding: 1rem 1.05rem;
+}
+.muted {
+	color: rgba(var(--black), 70%);
+	font-size: 0.95rem;
+}
+
+@media (max-width: 820px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
 }
 
 h1,
