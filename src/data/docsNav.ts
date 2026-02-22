@@ -15,6 +15,7 @@ export const NAV: NavSection[] = [
 			{ label: 'Home', href: '/' },
 			{ label: 'Executive brief', href: '/executive-brief' },
 			{ label: 'Visualizations', href: '/visualizations' },
+			{ label: 'Discord (servers & coordination)', href: '/discord' },
 			{ label: 'Post-revolution: current state', href: '/post-revolution' },
 			{ label: 'Method', href: '/method' },
 			{ label: 'Quality & fact-checking', href: '/quality' },
