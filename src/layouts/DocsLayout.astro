@@ -1,6 +1,5 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import DocsSidebar from '../components/DocsSidebar.astro';
 import PageToc from '../components/PageToc.astro';
@@ -24,6 +23,7 @@ const tocHtml = await Astro.slots.render('default');
 		>
 			Menu
 		</button>
+
 		<div class="shell">
 			<div class="left" id="docs-sidebar">
 				<div class="overlay" id="docs-overlay" aria-hidden="true"></div>
@@ -31,11 +31,13 @@ const tocHtml = await Astro.slots.render('default');
 					<DocsSidebar />
 				</div>
 			</div>
+
 			<main class="content">
 				<article class="prose">
 					<slot />
 				</article>
 			</main>
+
 			<div class="right">
 				<PageToc html={tocHtml} />
 			</div>
@@ -65,6 +67,7 @@ const tocHtml = await Astro.slots.render('default');
 				});
 			})();
 		</script>
+
 		<Footer />
 	</body>
 </html>
@@ -167,7 +170,6 @@ const tocHtml = await Astro.slots.render('default');
 			transform: translateX(0);
 		}
 
-		/* content padding under sticky header */
 		.content {
 			padding: 1rem 1rem 3rem;
 		}
