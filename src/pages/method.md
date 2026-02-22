@@ -1,4 +1,5 @@
 ---
+layout: ../layouts/DocsLayout.astro
 title: "Method"
 description: "How this report was assembled, what counts as evidence, and how confidence is rated."
 pubDate: 2026-02-22

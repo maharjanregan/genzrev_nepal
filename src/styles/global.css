@@ -44,10 +44,10 @@ body {
 	line-height: 1.7;
 }
 main {
-	width: 820px;
-	max-width: calc(100% - 2.5em);
-	margin: auto;
-	padding: 2.6em 1.25em 4em;
+	width: auto;
+	max-width: none;
+	margin: 0;
+	padding: 0;
 }
 
 /* nicer content rhythm */

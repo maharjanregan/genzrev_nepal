@@ -1,0 +1,51 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { NAV } from '../data/docsNav';
+---
+
+<aside class="sidebar" aria-label="Sidebar">
+	{NAV.map((section) => (
+		<div class="section">
+			<div class="section__title">{section.title}</div>
+			<nav class="section__nav">
+				{section.items.map((item) => (
+					<HeaderLink class="item" href={item.href}>{item.label}</HeaderLink>
+				))}
+			</nav>
+		</div>
+	))}
+</aside>
+
+<style>
+	.sidebar {
+		position: sticky;
+		top: 64px;
+		height: calc(100dvh - 64px);
+		overflow: auto;
+		padding: 1.25rem 0.75rem;
+		border-right: 1px solid rgba(var(--black), 10%);
+	}
+	.section {
+		margin-bottom: 1.25rem;
+	}
+	.section__title {
+		font-size: 0.85rem;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: rgba(var(--black), 60%);
+		margin: 0.25rem 0 0.6rem;
+	}
+	.section__nav {
+		display: grid;
+		gap: 0.25rem;
+	}
+	.item {
+		padding: 0.35rem 0.4rem;
+		border-radius: 8px;
+		color: rgba(var(--black), 80%);
+		text-decoration: none;
+	}
+	.item:hover {
+		background: rgba(var(--black), 4%);
+	}
+</style>

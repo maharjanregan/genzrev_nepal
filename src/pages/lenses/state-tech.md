@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/DocsLayout.astro
 title: "State technology & control"
 description: "Platform bans, network interference, and regulatory mechanisms."
 pubDate: 2026-02-22

@@ -1,4 +1,5 @@
 ---
+layout: ../layouts/DocsLayout.astro
 title: "Home"
 description: "Multi-lens research on how technology shaped Nepal’s Gen Z movement."
 pubDate: 2026-02-22

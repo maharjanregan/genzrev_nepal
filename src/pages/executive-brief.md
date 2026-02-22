@@ -1,4 +1,5 @@
 ---
+layout: ../layouts/DocsLayout.astro
 title: "Executive brief"
 description: "Two-page overview of how technology shaped Nepal’s Gen Z movement (evidence-based)."
 pubDate: 2026-02-22

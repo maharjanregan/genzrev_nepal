@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/DocsLayout.astro
 title: "Economic & infrastructural impact"
 description: "Measured costs and second-order effects of digital disruption."
 pubDate: 2026-02-22

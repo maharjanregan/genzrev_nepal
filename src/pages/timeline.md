@@ -1,4 +1,5 @@
 ---
+layout: ../layouts/DocsLayout.astro
 title: "Timeline"
 description: "Tech-related events and inflection points (platform bans, disruptions, policy moves)."
 pubDate: 2026-02-22

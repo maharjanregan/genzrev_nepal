@@ -1,4 +1,5 @@
 ---
+layout: ../layouts/DocsLayout.astro
 title: "Stakeholder map"
 description: "Platforms, state actors, Gen Z groups, media, civil society, and diaspora networks."
 pubDate: 2026-02-22

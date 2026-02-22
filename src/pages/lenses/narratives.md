@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/DocsLayout.astro
 title: "Narratives & information ecosystem"
 description: "Misinformation, counter-narratives, citizen journalism, and diaspora visibility."
 pubDate: 2026-02-22

@@ -1,4 +1,5 @@
 ---
+layout: ../layouts/DocsLayout.astro
 title: "Annotated bibliography"
 description: "Credible sources with short annotations and quotable lines."
 pubDate: 2026-02-22

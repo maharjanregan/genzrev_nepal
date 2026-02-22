@@ -1,4 +1,5 @@
 ---
+layout: ../layouts/DocsLayout.astro
 title: "Claims table"
 description: "Claim → evidence → source → confidence."
 pubDate: 2026-02-22

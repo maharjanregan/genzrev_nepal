@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/DocsLayout.astro
 title: "Human rights & digital rights"
 description: "Freedom of expression, protest policing, and legal frameworks."
 pubDate: 2026-02-22

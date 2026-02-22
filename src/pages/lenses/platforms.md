@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/DocsLayout.astro
 title: "Platforms & mobilization"
 description: "How platforms enabled organization, virality, and coordination."
 pubDate: 2026-02-22
