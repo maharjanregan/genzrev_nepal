@@ -15,6 +15,7 @@ export const NAV: NavSection[] = [
 			{ label: 'Home', href: '/' },
 			{ label: 'Executive brief', href: '/executive-brief' },
 			{ label: 'Method', href: '/method' },
+			{ label: 'Quality & fact-checking', href: '/quality' },
 			{ label: 'Timeline', href: '/timeline' },
 			{ label: 'Stakeholders', href: '/stakeholders' },
 			{ label: 'Claims table', href: '/claims' },
